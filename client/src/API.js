@@ -1,14 +1,14 @@
-const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000' : 'https://travel-log-api.now.sh';
+// const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000' : 'https://travel-log-api.now.sh';
 
 export async function listLogEntries() {
-  const response = await fetch(`${API_URL}/api/logs`);
+  const response = await fetch(`/api/logs`);
   return response.json();
 }
 
 export async function createLogEntry(entry) {
   const apiKey = entry.apiKey;
   delete entry.apiKey;
-  const response = await fetch(`${API_URL}/api/logs`, {
+  const response = await fetch(`/api/logs`, {
     method: 'POST',
     headers: {
       'content-type': 'application/json',
