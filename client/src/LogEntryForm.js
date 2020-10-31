@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/formStyle.css";
 
-import { createLogEntry, createLogEntryNew } from './API';
+import { createLogEntryNew } from './API';
 
 const LogEntryForm = ({ token, location, onClose }) => {
   const [loading, setLoading] = useState(false);

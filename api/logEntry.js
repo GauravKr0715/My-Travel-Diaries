@@ -1,7 +1,6 @@
 const express = require('express');
 const Router = express.Router();
 
-const User = require('../models/User');
 const TravelLog = require('../models/TravelLog');
 const verify = require('../verifyToken');
 const mongoose = require('mongoose');

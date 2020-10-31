@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { useHistory } from "react-router-dom";
 import Spinner from "../spinner.gif";
 import BG from "../images/graphic3.svg";
 import "../styles/bootstrap.min.css";
@@ -9,7 +8,6 @@ import "../styles/iofrm-theme20.css";
 // import '../styles/loginForm.css';
 
 const LoginPage = () => {
-  const history = useHistory();
   const [loading, setLoading] = useState(false);
   const { register, handleSubmit } = useForm();
   const [error, setError] = useState(null);

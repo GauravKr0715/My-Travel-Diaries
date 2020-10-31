@@ -1,5 +1,4 @@
 import React, { Component, useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
 import {
   Collapse,
   Navbar,
@@ -17,7 +16,6 @@ import {
 } from "reactstrap";
 
 const AppNavbar = ({ user }) => {
-  const history = useHistory();
   const [ isOpen, setIsOpen ] = useState(false);
 
   useEffect(() => {

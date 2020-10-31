@@ -12,7 +12,7 @@ const { notFound, errorHandler } = require("./middlewares");
 
 
 mongoose
-  .connect(`mongodb+srv://gauravtest:rhino97@test.xsaad.mongodb.net/mtd?retryWrites=true&w=majority`, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(process.env.DB_KEY, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log(mongoose.connection.readyState))
   .catch((err) => console.log(err))
 
