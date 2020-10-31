@@ -6,6 +6,7 @@ import "./styles/formStyle.css";
 import { createLogEntryNew } from './API';
 
 const LogEntryForm = ({ token, location, onClose }) => {
+  const [imgURL, setImgURL] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const { register, handleSubmit } = useForm();
@@ -24,6 +25,10 @@ const LogEntryForm = ({ token, location, onClose }) => {
     }
   };
 
+  const imgLoadFunc = (e) => {
+    setImgURL(e.target.value);
+  }
+
   return (
     <div className="card box_shw2 border-0 px-3 rounded-2 mb-1 w_500 py-4 mx-auto mt-1">
     <div className="card-header bg-white f_20_22 border-0 text-center">Add A New Entry</div>
@@ -37,8 +42,13 @@ const LogEntryForm = ({ token, location, onClose }) => {
           <input name="description" type="text" className="text-field form-control mb-3 bg_grey border-0 py-1" placeholder="Description" required ref={register}  />
         </div>
         <div className="position-relative form-group">
-          <input name="image" type="text" className="text-field form-control mb-3 bg_grey border-0 py-1" placeholder="Image URL" ref={register} />
+          <input name="image" type="text" className="text-field form-control mb-3 bg_grey border-0 py-1" placeholder="Image URL" ref={register} onChange={imgLoadFunc} />
         </div>
+        {imgURL ? (
+          <div className="position-relative form-group">
+            <img src={imgURL} alt="Preview Image"/>
+          </div>
+        ) : '' }
             <div className="position-relative form-group">
           <input name="rating" type="number" className="text-field form-control mb-3 bg_grey border-0 py-1" placeholder="Rating" min="1" max="5" required ref={register} />
         </div>
