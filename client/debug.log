@@ -1,0 +1,8 @@
+[1028/171250.470:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1031/002717.842:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff9c6ef6e00 of 12 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[1031/002717.936:WARNING:process_snapshot_win.cc(71)] ReadMemory ExceptionInformation failed
+[1031/002717.842:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1031/002718.310:ERROR:exception_snapshot_win.cc(99)] thread ID 35616 not found in process
+[1031/002717.936:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1031/002718.310:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1031/171450.531:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
