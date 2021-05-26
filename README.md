@@ -95,6 +95,10 @@ Also replace the *mapStyle* and *mapboxApiAccessToken* with your own Mapbox cred
 <!-- CONTACT -->
 ## Contact
 
-[@Gaurav__kr0715](https://www.instagram.com/Gaurav__kr0715/) - laxaman.pal@gmail.com
+[LinkedIn@Gaurav Kumar](https://www.linkedin.com/in/gaurav-kumar-5b7412193/) 
+
+[Instagram@Gaurav__kr0715](https://www.instagram.com/Gaurav__kr0715/)
+
+Mail me at: laxaman.pal@gmail.com
 
 Project Link: [https://github.com/GauravKr0715/My-Travel-Diaries](https://github.com/GauravKr0715/My-Travel-Diaries)
